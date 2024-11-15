@@ -1,6 +1,6 @@
 ﻿namespace EQUIPMENTSYS
 {
-    partial class Form1
+    partial class borrowing
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(borrowing));
             splitContainer1 = new SplitContainer();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             label4 = new Label();
-            label11 = new Label();
-            label17 = new Label();
-            label2 = new Label();
             comboBox1 = new ComboBox();
             groupBox7 = new GroupBox();
             label12 = new Label();
@@ -58,16 +58,20 @@
             label8 = new Label();
             label3 = new Label();
             label6 = new Label();
-            label5 = new Label();
-            textBox1 = new TextBox();
             label1 = new Label();
+            pictureBox8 = new PictureBox();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox7.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -79,70 +83,65 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.BackColor = Color.SeaGreen;
+            splitContainer1.Panel1.Controls.Add(pictureBox4);
+            splitContainer1.Panel1.Controls.Add(pictureBox3);
+            splitContainer1.Panel1.Controls.Add(pictureBox2);
             splitContainer1.Panel1.Controls.Add(label4);
-            splitContainer1.Panel1.Controls.Add(label11);
-            splitContainer1.Panel1.Controls.Add(label17);
-            splitContainer1.Panel1.Controls.Add(label2);
             splitContainer1.Panel1.ForeColor = Color.Transparent;
             splitContainer1.Panel1.Paint += splitContainer1_Panel1_Paint_1;
             // 
             // splitContainer1.Panel2
             // 
+            splitContainer1.Panel2.BackgroundImage = (Image)resources.GetObject("splitContainer1.Panel2.BackgroundImage");
+            splitContainer1.Panel2.Controls.Add(pictureBox8);
+            splitContainer1.Panel2.Controls.Add(textBox1);
             splitContainer1.Panel2.Controls.Add(comboBox1);
             splitContainer1.Panel2.Controls.Add(groupBox7);
-            splitContainer1.Panel2.Controls.Add(label5);
-            splitContainer1.Panel2.Controls.Add(textBox1);
             splitContainer1.Panel2.Controls.Add(label1);
             splitContainer1.Size = new Size(999, 565);
-            splitContainer1.SplitterDistance = 187;
+            splitContainer1.SplitterDistance = 105;
             splitContainer1.TabIndex = 0;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(40, 210);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(33, 30);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 26;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(40, 124);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(33, 30);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 25;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(40, 52);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(33, 30);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 24;
+            pictureBox2.TabStop = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Arial Rounded MT Bold", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(40, 526);
+            label4.Location = new Point(9, 530);
             label4.Name = "label4";
-            label4.Size = new Size(101, 17);
+            label4.Size = new Size(90, 15);
             label4.TabIndex = 11;
             label4.Text = "ucc.mis.com";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Cursor = Cursors.Hand;
-            label11.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(51, 131);
-            label11.Name = "label11";
-            label11.Size = new Size(72, 23);
-            label11.TabIndex = 10;
-            label11.Text = "Admin";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Cursor = Cursors.Hand;
-            label17.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(51, 57);
-            label17.Name = "label17";
-            label17.Size = new Size(67, 23);
-            label17.TabIndex = 9;
-            label17.Text = "Home";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Cursor = Cursors.Hand;
-            label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(50, 207);
-            label2.Name = "label2";
-            label2.Size = new Size(68, 23);
-            label2.TabIndex = 8;
-            label2.Text = "About";
             // 
             // comboBox1
             // 
@@ -151,10 +150,10 @@
             comboBox1.DropDownHeight = 75;
             comboBox1.DropDownWidth = 75;
             comboBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox1.ForeColor = Color.SeaGreen;
+            comboBox1.ForeColor = Color.DimGray;
             comboBox1.FormattingEnabled = true;
             comboBox1.IntegralHeight = false;
-            comboBox1.Location = new Point(663, 21);
+            comboBox1.Location = new Point(710, 22);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(132, 28);
             comboBox1.TabIndex = 9;
@@ -180,9 +179,9 @@
             groupBox7.Controls.Add(label8);
             groupBox7.Controls.Add(label3);
             groupBox7.Controls.Add(label6);
-            groupBox7.Location = new Point(13, 66);
+            groupBox7.Location = new Point(48, 66);
             groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(782, 477);
+            groupBox7.Size = new Size(794, 477);
             groupBox7.TabIndex = 11;
             groupBox7.TabStop = false;
             // 
@@ -191,7 +190,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.SeaGreen;
-            label12.Location = new Point(338, 52);
+            label12.Location = new Point(358, 57);
             label12.Name = "label12";
             label12.Size = new Size(174, 20);
             label12.TabIndex = 22;
@@ -199,7 +198,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(338, 188);
+            textBox4.Location = new Point(358, 193);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(162, 27);
             textBox4.TabIndex = 21;
@@ -207,7 +206,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(338, 158);
+            label13.Location = new Point(358, 163);
             label13.Name = "label13";
             label13.Size = new Size(117, 20);
             label13.TabIndex = 20;
@@ -215,7 +214,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(557, 116);
+            textBox2.Location = new Point(577, 121);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(162, 27);
             textBox2.TabIndex = 19;
@@ -225,7 +224,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Arial", 7.8F, FontStyle.Italic, GraphicsUnit.Point);
             label10.ForeColor = Color.DimGray;
-            label10.Location = new Point(313, 353);
+            label10.Location = new Point(333, 358);
             label10.Name = "label10";
             label10.Size = new Size(428, 80);
             label10.TabIndex = 10;
@@ -234,7 +233,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(557, 87);
+            label14.Location = new Point(577, 92);
             label14.Name = "label14";
             label14.Size = new Size(79, 20);
             label14.TabIndex = 18;
@@ -242,7 +241,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(338, 116);
+            textBox3.Location = new Point(358, 121);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(162, 27);
             textBox3.TabIndex = 17;
@@ -250,7 +249,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(338, 87);
+            label15.Location = new Point(358, 92);
             label15.Name = "label15";
             label15.Size = new Size(80, 20);
             label15.TabIndex = 16;
@@ -264,7 +263,7 @@
             groupBox1.Controls.Add(label16);
             groupBox1.Controls.Add(comboBox2);
             groupBox1.ForeColor = SystemColors.ControlText;
-            groupBox1.Location = new Point(313, 26);
+            groupBox1.Location = new Point(333, 31);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(436, 295);
             groupBox1.TabIndex = 23;
@@ -321,7 +320,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(16, 26);
+            pictureBox1.Location = new Point(36, 31);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(165, 152);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -333,7 +332,7 @@
             button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.DimGray;
-            button2.Location = new Point(16, 396);
+            button2.Location = new Point(36, 401);
             button2.Name = "button2";
             button2.Size = new Size(94, 39);
             button2.TabIndex = 7;
@@ -345,7 +344,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.DimGray;
-            label7.Location = new Point(198, 146);
+            label7.Location = new Point(218, 151);
             label7.Name = "label7";
             label7.Size = new Size(72, 21);
             label7.TabIndex = 9;
@@ -357,7 +356,7 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(132, 394);
+            button1.Location = new Point(152, 399);
             button1.Name = "button1";
             button1.Size = new Size(160, 39);
             button1.TabIndex = 8;
@@ -370,7 +369,7 @@
             label9.BackColor = Color.SeaGreen;
             label9.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(16, 195);
+            label9.Location = new Point(36, 200);
             label9.Name = "label9";
             label9.Size = new Size(99, 23);
             label9.TabIndex = 3;
@@ -381,7 +380,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.DimGray;
-            label8.Location = new Point(196, 109);
+            label8.Location = new Point(216, 114);
             label8.Name = "label8";
             label8.Size = new Size(96, 21);
             label8.TabIndex = 7;
@@ -393,7 +392,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.DimGray;
-            label3.Location = new Point(197, 38);
+            label3.Location = new Point(217, 43);
             label3.Name = "label3";
             label3.Size = new Size(58, 21);
             label3.TabIndex = 5;
@@ -404,48 +403,51 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.DimGray;
-            label6.Location = new Point(196, 72);
+            label6.Location = new Point(216, 77);
             label6.Name = "label6";
             label6.Size = new Size(82, 21);
             label6.TabIndex = 6;
             label6.Text = "Stock: 4";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.SeaGreen;
-            label5.Location = new Point(233, 27);
-            label5.Name = "label5";
-            label5.Size = new Size(61, 17);
-            label5.TabIndex = 10;
-            label5.Text = "Search";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(295, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(333, 27);
-            textBox1.TabIndex = 8;
-            // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial Rounded MT Bold", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.SeaGreen;
-            label1.Location = new Point(13, 20);
+            label1.Location = new Point(16, 20);
             label1.Name = "label1";
             label1.Size = new Size(143, 27);
             label1.TabIndex = 7;
             label1.Text = "Equipments";
             // 
-            // Form1
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(347, 19);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(33, 30);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 36;
+            pictureBox8.TabStop = false;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.White;
+            textBox1.ForeColor = Color.DimGray;
+            textBox1.Location = new Point(382, 20);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(231, 27);
+            textBox1.TabIndex = 35;
+            textBox1.Text = " search";
+            // 
+            // borrowing
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(999, 565);
             Controls.Add(splitContainer1);
-            Name = "Form1";
+            Name = "borrowing";
             Text = "Form1";
             Load += Form1_Load;
             splitContainer1.Panel1.ResumeLayout(false);
@@ -454,20 +456,21 @@
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox7.ResumeLayout(false);
             groupBox7.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private SplitContainer splitContainer1;
-        private Label label11;
-        private Label label17;
-        private Label label2;
         private ComboBox comboBox1;
         private GroupBox groupBox7;
         private Label label12;
@@ -492,9 +495,12 @@
         private Label label8;
         private Label label3;
         private Label label6;
-        private Label label5;
-        private TextBox textBox1;
         private Label label1;
         private Label label4;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox8;
+        private TextBox textBox1;
     }
 }

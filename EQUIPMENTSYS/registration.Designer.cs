@@ -29,11 +29,12 @@ namespace EQUIPMENTSYS
         /// </summary>
         private void InitializeComponent()
         {
-            label2 = new Label();
-            label11 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registration));
             splitContainer1 = new SplitContainer();
             label4 = new Label();
-            label17 = new Label();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             label8 = new Label();
             label7 = new Label();
             button2 = new Button();
@@ -56,33 +57,12 @@ namespace EQUIPMENTSYS
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Cursor = Cursors.Hand;
-            label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(50, 207);
-            label2.Name = "label2";
-            label2.Size = new Size(68, 23);
-            label2.TabIndex = 8;
-            label2.Text = "About";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Cursor = Cursors.Hand;
-            label11.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(51, 131);
-            label11.Name = "label11";
-            label11.Size = new Size(72, 23);
-            label11.TabIndex = 10;
-            label11.Text = "Admin";
             // 
             // splitContainer1
             // 
@@ -94,15 +74,16 @@ namespace EQUIPMENTSYS
             // 
             splitContainer1.Panel1.BackColor = Color.SeaGreen;
             splitContainer1.Panel1.Controls.Add(label4);
-            splitContainer1.Panel1.Controls.Add(label11);
-            splitContainer1.Panel1.Controls.Add(label17);
-            splitContainer1.Panel1.Controls.Add(label2);
+            splitContainer1.Panel1.Controls.Add(pictureBox4);
+            splitContainer1.Panel1.Controls.Add(pictureBox3);
+            splitContainer1.Panel1.Controls.Add(pictureBox2);
             splitContainer1.Panel1.ForeColor = Color.Transparent;
             splitContainer1.Panel1.Paint += splitContainer1_Panel1_Paint_1;
             // 
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = Color.WhiteSmoke;
+            splitContainer1.Panel2.BackgroundImage = (Image)resources.GetObject("splitContainer1.Panel2.BackgroundImage");
             splitContainer1.Panel2.Controls.Add(label8);
             splitContainer1.Panel2.Controls.Add(label7);
             splitContainer1.Panel2.Controls.Add(button2);
@@ -118,31 +99,50 @@ namespace EQUIPMENTSYS
             splitContainer1.Panel2.Controls.Add(groupBox1);
             splitContainer1.Panel2.Controls.Add(groupBox2);
             splitContainer1.Size = new Size(999, 565);
-            splitContainer1.SplitterDistance = 187;
+            splitContainer1.SplitterDistance = 106;
             splitContainer1.TabIndex = 2;
+            splitContainer1.SplitterMoved += splitContainer1_SplitterMoved;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Arial Rounded MT Bold", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(40, 526);
+            label4.Location = new Point(10, 536);
             label4.Name = "label4";
-            label4.Size = new Size(101, 17);
-            label4.TabIndex = 11;
+            label4.Size = new Size(90, 15);
+            label4.TabIndex = 30;
             label4.Text = "ucc.mis.com";
             // 
-            // label17
+            // pictureBox4
             // 
-            label17.AutoSize = true;
-            label17.Cursor = Cursors.Hand;
-            label17.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(51, 57);
-            label17.Name = "label17";
-            label17.Size = new Size(67, 23);
-            label17.TabIndex = 9;
-            label17.Text = "Home";
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(40, 209);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(33, 30);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 29;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(40, 123);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(33, 30);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 28;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(40, 51);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(33, 30);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 27;
+            pictureBox2.TabStop = false;
             // 
             // label8
             // 
@@ -262,6 +262,7 @@ namespace EQUIPMENTSYS
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.Transparent;
             groupBox1.Controls.Add(comboBox1);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox2);
@@ -306,6 +307,7 @@ namespace EQUIPMENTSYS
             // 
             // groupBox2
             // 
+            groupBox2.BackColor = Color.Transparent;
             groupBox2.Controls.Add(label6);
             groupBox2.Location = new Point(33, 291);
             groupBox2.Name = "groupBox2";
@@ -337,6 +339,9 @@ namespace EQUIPMENTSYS
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -349,13 +354,8 @@ namespace EQUIPMENTSYS
             throw new NotImplementedException();
         }
 
-        #endregion
-
-        private Label label2;
-        private Label label11;
+#endregion
         private SplitContainer splitContainer1;
-        private Label label4;
-        private Label label17;
         private Label label8;
         private Label label7;
         private Button button2;
@@ -374,5 +374,9 @@ namespace EQUIPMENTSYS
         private TextBox textBox2;
         private GroupBox groupBox2;
         private Label label6;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private Label label4;
     }
 }

@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace EQUIPMENTSYS
 {
-    public partial class registration : Form
+    public partial class adding_deleting_items : Form
     {
-        public registration()
+        public adding_deleting_items()
         {
             InitializeComponent();
         }
 
-        private void registration_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
+        private void groupBox4_Enter(object sender, EventArgs e)
         {
 
         }

@@ -1,6 +1,7 @@
-﻿namespace EQUIPMENTSYS
+﻿
+namespace EQUIPMENTSYS
 {
-    partial class items
+    partial class adding_deleting_items
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +29,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(items));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adding_deleting_items));
             splitContainer1 = new SplitContainer();
+            pictureBox9 = new PictureBox();
             label4 = new Label();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
@@ -41,32 +43,36 @@
             groupBox1 = new GroupBox();
             vScrollBar1 = new VScrollBar();
             groupBox5 = new GroupBox();
+            label27 = new Label();
+            label28 = new Label();
             label16 = new Label();
-            button3 = new Button();
             label18 = new Label();
             label19 = new Label();
             label20 = new Label();
             label21 = new Label();
             pictureBox3 = new PictureBox();
             groupBox3 = new GroupBox();
+            label11 = new Label();
+            label17 = new Label();
             label10 = new Label();
-            button2 = new Button();
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
             pictureBox2 = new PictureBox();
             groupBox4 = new GroupBox();
+            label3 = new Label();
+            label2 = new Label();
             label22 = new Label();
-            button4 = new Button();
             label23 = new Label();
             label24 = new Label();
             label25 = new Label();
             label26 = new Label();
             pictureBox4 = new PictureBox();
             groupBox2 = new GroupBox();
+            label29 = new Label();
+            label30 = new Label();
             label9 = new Label();
-            button1 = new Button();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
@@ -76,6 +82,7 @@
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -100,6 +107,7 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.BackColor = Color.SeaGreen;
+            splitContainer1.Panel1.Controls.Add(pictureBox9);
             splitContainer1.Panel1.Controls.Add(label4);
             splitContainer1.Panel1.Controls.Add(pictureBox5);
             splitContainer1.Panel1.Controls.Add(pictureBox6);
@@ -119,22 +127,33 @@
             splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
             splitContainer1.Size = new Size(999, 565);
             splitContainer1.SplitterDistance = 107;
-            splitContainer1.TabIndex = 3;
-            splitContainer1.SplitterMoved += splitContainer1_SplitterMoved;
+            splitContainer1.TabIndex = 5;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Cursor = Cursors.Hand;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(42, 283);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(33, 30);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 34;
+            pictureBox9.TabStop = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial Rounded MT Bold", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(7, 536);
+            label4.Location = new Point(25, 516);
             label4.Name = "label4";
-            label4.Size = new Size(90, 15);
+            label4.Size = new Size(55, 15);
             label4.TabIndex = 33;
-            label4.Text = "ucc.mis.com";
+            label4.Text = "Log out";
             // 
             // pictureBox5
             // 
+            pictureBox5.Cursor = Cursors.Hand;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(40, 206);
             pictureBox5.Name = "pictureBox5";
@@ -145,6 +164,7 @@
             // 
             // pictureBox6
             // 
+            pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(40, 120);
             pictureBox6.Name = "pictureBox6";
@@ -155,6 +175,7 @@
             // 
             // pictureBox7
             // 
+            pictureBox7.Cursor = Cursors.Hand;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(40, 48);
             pictureBox7.Name = "pictureBox7";
@@ -210,7 +231,6 @@
             label1.Size = new Size(178, 32);
             label1.TabIndex = 12;
             label1.Text = "Equipments";
-            label1.Click += label1_Click;
             // 
             // groupBox1
             // 
@@ -224,7 +244,6 @@
             groupBox1.Size = new Size(810, 453);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // vScrollBar1
             // 
@@ -236,8 +255,9 @@
             // groupBox5
             // 
             groupBox5.BackColor = Color.White;
+            groupBox5.Controls.Add(label27);
+            groupBox5.Controls.Add(label28);
             groupBox5.Controls.Add(label16);
-            groupBox5.Controls.Add(button3);
             groupBox5.Controls.Add(label18);
             groupBox5.Controls.Add(label19);
             groupBox5.Controls.Add(label20);
@@ -248,6 +268,30 @@
             groupBox5.Size = new Size(267, 184);
             groupBox5.TabIndex = 7;
             groupBox5.TabStop = false;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.BackColor = Color.Teal;
+            label27.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label27.ForeColor = Color.White;
+            label27.Location = new Point(150, 147);
+            label27.Name = "label27";
+            label27.Size = new Size(36, 17);
+            label27.TabIndex = 12;
+            label27.Text = "Edit";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.BackColor = Color.Firebrick;
+            label28.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label28.ForeColor = Color.White;
+            label28.Location = new Point(200, 147);
+            label28.Name = "label28";
+            label28.Size = new Size(55, 17);
+            label28.TabIndex = 11;
+            label28.Text = "Delete";
             // 
             // label16
             // 
@@ -260,18 +304,6 @@
             label16.Size = new Size(75, 17);
             label16.TabIndex = 6;
             label16.Text = "Available";
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.Teal;
-            button3.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(146, 138);
-            button3.Name = "button3";
-            button3.Size = new Size(106, 34);
-            button3.TabIndex = 5;
-            button3.Text = "BORROW";
-            button3.UseVisualStyleBackColor = false;
             // 
             // label18
             // 
@@ -334,8 +366,9 @@
             // groupBox3
             // 
             groupBox3.BackColor = Color.White;
+            groupBox3.Controls.Add(label11);
+            groupBox3.Controls.Add(label17);
             groupBox3.Controls.Add(label10);
-            groupBox3.Controls.Add(button2);
             groupBox3.Controls.Add(label12);
             groupBox3.Controls.Add(label13);
             groupBox3.Controls.Add(label14);
@@ -346,6 +379,30 @@
             groupBox3.Size = new Size(267, 184);
             groupBox3.TabIndex = 7;
             groupBox3.TabStop = false;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.Teal;
+            label11.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(150, 147);
+            label11.Name = "label11";
+            label11.Size = new Size(36, 17);
+            label11.TabIndex = 10;
+            label11.Text = "Edit";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.Firebrick;
+            label17.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(200, 147);
+            label17.Name = "label17";
+            label17.Size = new Size(55, 17);
+            label17.TabIndex = 9;
+            label17.Text = "Delete";
             // 
             // label10
             // 
@@ -358,18 +415,6 @@
             label10.Size = new Size(75, 17);
             label10.TabIndex = 6;
             label10.Text = "Available";
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Teal;
-            button2.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(146, 138);
-            button2.Name = "button2";
-            button2.Size = new Size(106, 34);
-            button2.TabIndex = 5;
-            button2.Text = "BORROW";
-            button2.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -432,8 +477,9 @@
             // groupBox4
             // 
             groupBox4.BackColor = Color.White;
+            groupBox4.Controls.Add(label3);
+            groupBox4.Controls.Add(label2);
             groupBox4.Controls.Add(label22);
-            groupBox4.Controls.Add(button4);
             groupBox4.Controls.Add(label23);
             groupBox4.Controls.Add(label24);
             groupBox4.Controls.Add(label25);
@@ -444,6 +490,32 @@
             groupBox4.Size = new Size(267, 184);
             groupBox4.TabIndex = 8;
             groupBox4.TabStop = false;
+            groupBox4.Enter += groupBox4_Enter;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Teal;
+            label3.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(150, 147);
+            label3.Name = "label3";
+            label3.Size = new Size(36, 17);
+            label3.TabIndex = 8;
+            label3.Text = "Edit";
+            label3.Click += label3_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Firebrick;
+            label2.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(200, 147);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 17);
+            label2.TabIndex = 7;
+            label2.Text = "Delete";
             // 
             // label22
             // 
@@ -456,18 +528,6 @@
             label22.Size = new Size(75, 17);
             label22.TabIndex = 6;
             label22.Text = "Available";
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.Teal;
-            button4.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(146, 138);
-            button4.Name = "button4";
-            button4.Size = new Size(106, 34);
-            button4.TabIndex = 5;
-            button4.Text = "BORROW";
-            button4.UseVisualStyleBackColor = false;
             // 
             // label23
             // 
@@ -530,8 +590,9 @@
             // groupBox2
             // 
             groupBox2.BackColor = Color.White;
+            groupBox2.Controls.Add(label29);
+            groupBox2.Controls.Add(label30);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(button1);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
@@ -542,7 +603,30 @@
             groupBox2.Size = new Size(267, 184);
             groupBox2.TabIndex = 3;
             groupBox2.TabStop = false;
-            groupBox2.Enter += groupBox2_Enter;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.BackColor = Color.Teal;
+            label29.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label29.ForeColor = Color.White;
+            label29.Location = new Point(150, 147);
+            label29.Name = "label29";
+            label29.Size = new Size(36, 17);
+            label29.TabIndex = 14;
+            label29.Text = "Edit";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.BackColor = Color.Firebrick;
+            label30.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label30.ForeColor = Color.White;
+            label30.Location = new Point(200, 147);
+            label30.Name = "label30";
+            label30.Size = new Size(55, 17);
+            label30.TabIndex = 13;
+            label30.Text = "Delete";
             // 
             // label9
             // 
@@ -555,18 +639,6 @@
             label9.Size = new Size(75, 17);
             label9.TabIndex = 6;
             label9.Text = "Available";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Teal;
-            button1.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(146, 138);
-            button1.Name = "button1";
-            button1.Size = new Size(106, 34);
-            button1.TabIndex = 5;
-            button1.Text = "BORROW";
-            button1.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
@@ -626,21 +698,21 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // items
+            // adding_deleting_items
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(999, 565);
             Controls.Add(splitContainer1);
-            Name = "items";
-            Text = "items";
-            Load += items_Load;
+            Name = "adding_deleting_items";
+            Text = "adding_deleting_items";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -661,21 +733,39 @@
             ResumeLayout(false);
         }
 
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void splitContainer1_Panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
+
         private SplitContainer splitContainer1;
+        private PictureBox pictureBox9;
+        private Label label4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
+        private ComboBox comboBox1;
         private TextBox textBox1;
         private Label label1;
         private GroupBox groupBox1;
-        private ComboBox comboBox1;
-        private GroupBox groupBox2;
-        private PictureBox pictureBox1;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label8;
+        private VScrollBar vScrollBar1;
+        private GroupBox groupBox5;
+        private Label label16;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private PictureBox pictureBox3;
         private GroupBox groupBox3;
         private Label label10;
-        private Button button2;
         private Label label12;
         private Label label13;
         private Label label14;
@@ -683,27 +773,25 @@
         private PictureBox pictureBox2;
         private GroupBox groupBox4;
         private Label label22;
-        private Button button4;
         private Label label23;
         private Label label24;
         private Label label25;
         private Label label26;
         private PictureBox pictureBox4;
+        private GroupBox groupBox2;
         private Label label9;
-        private Button button1;
-        private VScrollBar vScrollBar1;
-        private GroupBox groupBox5;
-        private Label label16;
-        private Button button3;
-        private Label label18;
-        private Label label19;
-        private Label label20;
-        private Label label21;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private Label label4;
-        private PictureBox pictureBox8;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private PictureBox pictureBox1;
+        private Label label3;
+        private Label label2;
+        private Label label27;
+        private Label label28;
+        private Label label11;
+        private Label label17;
+        private Label label29;
+        private Label label30;
     }
 }

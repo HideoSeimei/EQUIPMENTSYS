@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace EQUIPMENTSYS
 {
-    public partial class registration : Form
+    public partial class borrowing4 : Form
     {
-        public registration()
+        public borrowing4()
         {
             InitializeComponent();
         }
 
-        private void registration_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
+        private void borrowing4_Load(object sender, EventArgs e)
         {
 
         }
