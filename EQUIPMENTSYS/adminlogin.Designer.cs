@@ -158,8 +158,9 @@ namespace EQUIPMENTSYS
             textBox2.Location = new Point(52, 13);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
             textBox2.PlaceholderText = " Password";
-            textBox2.Size = new Size(220, 19);
+            textBox2.Size = new Size(221, 19);
             textBox2.TabIndex = 1;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
