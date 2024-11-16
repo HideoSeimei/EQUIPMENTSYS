@@ -304,6 +304,7 @@ namespace EQUIPMENTSYS
             comboBox1.Size = new Size(92, 23);
             comboBox1.TabIndex = 18;
             comboBox1.Text = " Year";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label3
             // 

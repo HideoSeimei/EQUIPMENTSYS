@@ -33,7 +33,7 @@ namespace EQUIPMENTSYS
         private void button2_Click(object sender, EventArgs e)
         {
             //for opening the adminlogin page 
-            
+
             adminlogin.Show();
             this.Hide();
             //
@@ -46,9 +46,9 @@ namespace EQUIPMENTSYS
             con.Open();// for opening the connection
             string query = "Insert into accounts(username,password,Firstname,Lastname,Course,Year) values(@username,@password,@Firstname,@Lastname,@course,@year);";
             SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@username", textBox3.Text); 
+            cmd.Parameters.AddWithValue("@username", textBox3.Text);
             cmd.Parameters.AddWithValue("@password", textBox5.Text);
-            cmd.Parameters.AddWithValue("@Firstname",textBox1.Text);
+            cmd.Parameters.AddWithValue("@Firstname", textBox1.Text);
             cmd.Parameters.AddWithValue("@Lastname", textBox2.Text);
             cmd.Parameters.AddWithValue("@course", textBox3.Text);
             cmd.Parameters.AddWithValue("@year", comboBox1.Text);
@@ -57,6 +57,11 @@ namespace EQUIPMENTSYS
             adminlogin.Show();
             this.Hide();
 
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
