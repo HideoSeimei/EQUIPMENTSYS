@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Timers;
 
 namespace EQUIPMENTSYS
 {
@@ -63,7 +64,8 @@ namespace EQUIPMENTSYS
             }
             else//if there's no account
             {
-                MessageBox.Show("Invalid Account");
+                label2.Text = "Wrong Username or Password";
+                
             }
              
         }

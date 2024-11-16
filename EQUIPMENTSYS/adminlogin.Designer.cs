@@ -47,6 +47,7 @@ namespace EQUIPMENTSYS
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
@@ -238,8 +239,9 @@ namespace EQUIPMENTSYS
             // 
             // splitContainer1.Panel2
             // 
-            splitContainer1.Panel2.BackColor = Color.WhiteSmoke;
+            splitContainer1.Panel2.BackColor = Color.Transparent;
             splitContainer1.Panel2.BackgroundImage = (Image)resources.GetObject("splitContainer1.Panel2.BackgroundImage");
+            splitContainer1.Panel2.Controls.Add(label2);
             splitContainer1.Panel2.Controls.Add(linkLabel1);
             splitContainer1.Panel2.Controls.Add(button2);
             splitContainer1.Panel2.Controls.Add(button1);
@@ -296,6 +298,16 @@ namespace EQUIPMENTSYS
             pictureBox7.TabIndex = 30;
             pictureBox7.TabStop = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Brown;
+            label2.Location = new Point(277, 268);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 20);
+            label2.TabIndex = 14;
+            // 
             // adminlogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -351,5 +363,6 @@ namespace EQUIPMENTSYS
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private Label label4;
+        private Label label2;
     }
 }
